@@ -7,23 +7,6 @@
     <title>Home</title>
 </head>
 <body>
-    <!-- <table>
-        <tr>
-            <th>Student Name</th>
-            <th>GPA</th>
-        </tr>
-        {% for student in school.get_students("name") %}
-        <tr>
-            <td>{{ student.name }}</a></td>
-        </tr>
-        {% endfor %}
-        {% for student in school.get_students("gpa") %}
-        <tr>
-            <td>{{ student.gpa }}</a></td>
-        </tr>
-        {% endfor %}
-
-    </table> -->
     <h1>{{ school.name }}</h1>
     <table>
         <thead>
@@ -45,43 +28,6 @@
             {% endfor %}
         </tbody>
     </table>
-    <!-- <table>
-        <tr>
-        <td>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Student Name</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for student in school.get_students("name") %}
-                    <tr>
-                        <td>{{ student.name }}</a></td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </td>
-        <td>
-            <table>
-                <thead>
-                    <tr>
-                        <td>GPA</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for student in school.get_students("gpa") %}
-                    <tr>
-                        <td>{{ student.gpa }}</a></td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </td>
-        </tr>
-        </table> -->
-        
 </body>
 </html>
 

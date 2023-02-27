@@ -63,19 +63,6 @@ class School:
         else:
             self._student[student_id] = (Student(name, student_id)) 
             return True   
-        # if not name or not student_id:
-        #     raise ValueError
-        # else:
-        #     for each_student in self._students:
-        #         if each_student == student_id:
-        #             raise TypeError
-        #         else:
-        #             continue
 
-        #     student_instance = Student(name, student_id, grades=None)
-        #     self._students[student_id]=student_instance
-
-            
-        #     return True 
 
         
