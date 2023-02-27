@@ -18,16 +18,16 @@ In this project, a web application was built to allow visitors to view a list of
           visit http://127.0.0.1:5000/student/A00000000 
 
 ### API Endpoint - Add a Grade
-*Data is expected to be passed as JSON*
-*Data must contain the following keys:*
+*Data is expected to be passed as JSON*\
+*Data must contain the following keys:*\
 `grade`: grade of student
 
 In an api testing tool like Postman, make a POST request with the appropriate key to http://127.0.0.1:5000/student/<student_id>/grades/add
 
 
 ### API Endpoint - Create a Student
-*Data is expected to be passed as JSON*
-*Data must contain the following keys:*
+*Data is expected to be passed as JSON*\
+*Data must contain the following keys:*\
 `name`: name of the student
 `student_id`: student ID of student 
 
