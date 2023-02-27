@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>{{ student.name }} - {{student.student_id}}</h1>
+    <table>
+        <thead>
+            <tr>
+                {% for idx in range(student.grades|length) %}
+                <th>Grade #{{ idx+1 }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for grade in student.grades %}
+                <td>
+                    {{ loop.index }} {{ grade }}
+                </td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table> 
+    <a href="{{ url_for('home') }}">Homepage</a>
+</body>
+</html>

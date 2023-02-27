@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!-- <table>
+        <tr>
+            <th>Student Name</th>
+            <th>GPA</th>
+        </tr>
+        {% for student in school.get_students("name") %}
+        <tr>
+            <td>{{ student.name }}</a></td>
+        </tr>
+        {% endfor %}
+        {% for student in school.get_students("gpa") %}
+        <tr>
+            <td>{{ student.gpa }}</a></td>
+        </tr>
+        {% endfor %}
+
+    </table> -->
+    <h1>{{ school.name }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in school.get_students("name") %}
+            <tr>
+                <td>
+                    <a href="{{ url_for('student', student_id=student.student_id) }}">{{ student.name}}</a>
+                </td>
+                <td>
+                    {{ student.gpa }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <!-- <table>
+        <tr>
+        <td>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Student Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in school.get_students("name") %}
+                    <tr>
+                        <td>{{ student.name }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table>
+                <thead>
+                    <tr>
+                        <td>GPA</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in school.get_students("gpa") %}
+                    <tr>
+                        <td>{{ student.gpa }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </td>
+        </tr>
+        </table> -->
+        
+</body>
+</html>
+
